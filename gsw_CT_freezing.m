@@ -11,7 +11,7 @@ function CT_freezing = gsw_CT_freezing(SA,p,saturation_fraction)
 %  Calculates the Conservative Temperature at which seawater freezes.  The 
 %  Conservative Temperature freezing point is calculated from the exact 
 %  in-situ freezing temperature which is found by a modified Newton-Raphson
-%  iteration (McDougall and Wotherspoon, 2013) of the equality of the 
+%  iteration (McDougall and Wotherspoon, 2014) of the equality of the 
 %  chemical potentials of water in seawater and in ice.
 %
 %  An alternative GSW function, gsw_CT_freezing_poly, it is based on a 
@@ -49,9 +49,9 @@ function CT_freezing = gsw_CT_freezing(SA,p,saturation_fraction)
 %   UNESCO (English), 196 pp.  Available from http://www.TEOS-10.org.
 %    See sections 3.33 and 3.34 of this TEOS-10 Manual.  
 %
-%  McDougall T. J. and S. J. Wotherspoon, 2013: A simple modification of 
-%   Newton's method to achieve convergence of order 1 + sqrt(2).  Applied 
-%   Mathematics Letters, 29, 20-25.  
+%  McDougall, T.J., and S.J. Wotherspoon, 2014: A simple modification of
+%   Newton's method to achieve convergence of order 1 + sqrt(2).  Applied
+%   Mathematics Letters, 29, 20-25.
 %
 %  The software is available from http://www.TEOS-10.org
 %
