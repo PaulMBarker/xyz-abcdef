@@ -284,7 +284,7 @@
 %  gsw_CT_from_rho_exact                                - Conservative Temperature from density
 %  gsw_CT_maxdensity_exact                              - Conservative Temperature of maximum density of seawater
 %
-% Labroratory functions, for use with a densimeter measuremants
+% Laboratory functions, for use with densimeter measurements
 %  gsw_SA_from_rho_t_exact              - Absolute Salinity from density
 %  gsw_deltaSA_from_rho_t_exact         - Absolute Salinity Anomaly from density
 %  gsw_rho_t_exact                      - in-situ density
@@ -350,7 +350,7 @@
 %  gsw_Hill_ratio_at_SP2     - Hill ratio at a Practical Salinity of 2
 % 
 %  The GSW data set.
-%  gsw_data_v3_0        - This fine contains:
+%  gsw_data_v3_0        - This file contains:
 %                          (1) the global data set of Absolute Salinity Anomaly Ratio,
 %                          (2) the global data set of Absolute Salinity Anomaly Ref.,                                    
 %                          (3) a reference cast (for the isopycnal streamfunction), 
