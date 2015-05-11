@@ -1,4 +1,4 @@
-gsw-matlab
+GSW-Matlab
 ==========
 
-A repository of the official TEOS-10/GSW matlab library
+Gibbs-SeaWater (GSW) Oceanographic Toolbox in Matlab
