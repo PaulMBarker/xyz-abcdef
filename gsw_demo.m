@@ -52,7 +52,7 @@ fprintf(1,' \n');
 pause(6)
 fprintf(1,'The first property to be demonstrated is density (rho) as a function \n');
 fprintf(1,'of SA and CT.  This is computed by using the function "gsw_rho". \n');
-fprintf(1,'The use of a single algorithm for seawater density (the 48-term computationally \n');
+fprintf(1,'The use of a single algorithm for seawater density (the 76-term computationally \n');
 fprintf(1,'efficient expression) ensures consistency between ocean modelling, observational \n');
 fprintf(1,'oceanography, and  theoretical studies.  Note that this is not been the case to \n');
 fprintf(1,'date under EOS-80. \n');
@@ -75,7 +75,7 @@ fprintf(1,' \n');
 pause(6)
 fprintf(1,'The potential density anomaly can be obtained by using the function \n');
 fprintf(1,'"gsw_rho" - 1000 kg/m^3. \n');
-fprintf(1,'Two examples of this are sigma_Theta and sigma_2 which can be calculated \n');
+fprintf(1,'Two examples of this are sigma_0 and sigma_2 which can be calculated \n');
 fprintf(1,'as follows \n');
 fprintf(1,'sigma_0 = gsw_rho(SA,CT,0) - 1000 \n');
 gsw_demo_data.sigma_0 = gsw_rho(gsw_demo_data.SA,gsw_demo_data.CT,0) -1000;
@@ -97,11 +97,11 @@ fprintf(1,' \n');
 pause(6)
 fprintf(1,'Calculating the Conservative Temperature at which seawater freezes is \n');
 fprintf(1,'done with the function \n');
-fprintf(1,'"gsw_CT_freezing" \n');
+fprintf(1,'"gsw_CT_freezing_poly" \n');
 fprintf(1,'This programme allows the user to choose the amount of air which the water \n');
 fprintf(1,'contains, at zero the water is unsaturated and at 1 it is completely \n');
 fprintf(1,'saturated, we have opted to set the default saturation level at maximum \n');
-fprintf(1,'CT_freezing = gsw_CT_freezing(SA,p) \n');
+fprintf(1,'CT_freezing = gsw_CT_freezing_poly(SA,p) \n');
 gsw_demo_data.CT_freezing = gsw_CT_freezing(gsw_demo_data.SA,gsw_demo_data.p);
 fprintf(1,'%s %7.4f  %7.4f  %7.4f  %7.4f  %7.4f  %7.4f %7.4f %s \n' ,'CT_freezing = [',gsw_demo_data.CT_freezing([1,22,29:4:45],1)',']');
 fprintf(1,' \n');
@@ -115,7 +115,7 @@ fprintf(1,'freezing line at p of 0 dbar.  The potential density anomaly contours
 fprintf(1,'referenced to user supplied depth are also included.  In this example we have \n');
 fprintf(1,'set the reference pressure to be 2000 dbar. \n');
 fprintf(1,'note that this plotting function relies on the functions \n');
-fprintf(1,'"gsw_rho" and "gsw_CT_freezing" \n');
+fprintf(1,'"gsw_rho" and "gsw_CT_freezing_poly" \n');
 fprintf(1,' \n');
 fprintf(1,'p_ref = 2000 \n');
 fprintf(1,'gsw_SA_CT_plot(SA,CT,p_ref,''\\itS\\rm_A - \\Theta plot'') \n');
