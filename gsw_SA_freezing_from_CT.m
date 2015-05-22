@@ -51,7 +51,7 @@ function SA_freezing = gsw_SA_freezing_from_CT(CT,p,saturation_fraction)
 %   Melting of Ice and Sea Ice into Seawater and Frazil Ice Formation. 
 %   Journal of Physical Oceanography, 44, 1751-1775.
 %
-%  McDougall T.J. and S.J. Wotherspoon, 2013: A simple modification of 
+%  McDougall, T.J., and S.J. Wotherspoon, 2014: A simple modification of 
 %   Newton's method to achieve convergence of order 1 + sqrt(2).  Applied 
 %   Mathematics Letters, 29, 20-25.  
 %
@@ -199,12 +199,12 @@ for I_iter = 1:Number_of_Iterations
   f = gsw_CT_freezing(SA,p,saturation_fraction) - CT;
   SA = SA_old - f./CTfreezing_SA;
                % This is the half-way point of the modified Newton-Raphson   
-               % method of McDougall and Wotherspoon (2013). 
+               % method of McDougall and Wotherspoon (2014). 
   SA_mean = 0.5*(SA + SA_old); 
   [CTfreezing_SA, dummy] = gsw_CT_freezing_first_derivatives(SA_mean,p,saturation_fraction);
   SA = SA_old - f./CTfreezing_SA;
                % This is the end of one full iteration of the modified    
-               % Newton-Raphson method of McDougall and Wotherspoon (2013). 
+               % Newton-Raphson method of McDougall and Wotherspoon (2014). 
 end
 
 %--------------------------------------------------------------------------

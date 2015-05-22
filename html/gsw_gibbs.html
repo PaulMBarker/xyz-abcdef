@@ -73,7 +73,7 @@ p.footer {
 <h2>USAGE:<a name="1"></a></h2>
 <pre>gibbs = gsw_gibbs(ns,nt,np,SA,t,p)</pre>
 <h2>DESCRIPTION:<a name="2"></a></h2>
-<pre>Calculates specific Gibbs energy and its derivatives up to order 2 for
+<pre>Calculates specific Gibbs energy and its derivatives up to order 3 for
 seawater.  The Gibbs function for seawater is that of TEOS-10
 (IOC et al., 2010), being the sum of IAPWS-08 for the saline part and
 IAPWS-09 for the pure water part.  These International Association 
@@ -113,12 +113,9 @@ p   =  sea pressure                                             [ dbar ]
 <pre>Note. The derivatives are taken with respect to pressure in Pa, not
   withstanding that the pressure input into this routine is in dbar.</pre>
 <h2>AUTHOR:<a name="5"></a></h2>
-<pre>David Jackett                       [ <a href="mailto:help@teos-10.org">help@teos-10.org</a> ]
-
-MODIFIED:
-Trevor McDougall and Paul Barker</pre>
+<pre>David Jackett, Paul Barker and Trevor McDougall     [ <a href="mailto:help@teos-10.org">help@teos-10.org</a> ]</pre>
 <h2>VERSION NUMBER:<a name="6"></a></h2>
-<pre>3.04 (10th December, 2013)</pre>
+<pre>3.05 (16th February, 2015)</pre>
 <h2>REFERENCES:<a name="7"></a></h2>
 <pre>Feistel, R., 2003: A new extended Gibbs thermodynamic potential of
  seawater,  Progr. Oceanogr., 58, 43-114.</pre>

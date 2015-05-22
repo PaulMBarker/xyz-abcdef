@@ -27,7 +27,7 @@ function pot_enthalpy_ice_freezing = gsw_pot_enthalpy_ice_freezing(SA,p,saturati
 %
 % OUTPUT:
 %  pot_enthalpy_ice_freezing = potential enthalpy of ice at freezing 
-%                              of seawater                        [ deg C ]
+%                              of seawater                         [ J/kg ]
 %
 % AUTHOR: 
 %  Paul Barker and Trevor McDougall                    [ help@teos-10.org ]

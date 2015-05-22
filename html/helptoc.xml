@@ -24,7 +24,7 @@
         Which types of salinity and temperature should be archived
       </tocitem>
       <tocitem target="../pdf/Getting_Started_75_Term_EOS.pdf">
-        The 48-term expression for density
+        The 75-term expression for specific volume
       </tocitem>
       <tocitem target="../pdf/Getting_Started_Changes_to_Ocean_Practice.pdf">
         Changes to oceanographic practice under TEOS-10
@@ -412,11 +412,11 @@
       <tocitem target="gsw_t_freezing_poly.html" image="HelpIcon.FUNCTION">
         gsw_t_freezing_poly<!-- in-situ freezing temperature of seawater -->
       </tocitem>
-      <tocitem target="gsw_pot_enthalpy_freezing.html" image="HelpIcon.FUNCTION">
-        gsw_pot_enthalpy_freezing<!-- pot_enthalpy of seawater at the freezing point -->
+      <tocitem target="gsw_pot_enthalpy_ice_freezing.html" image="HelpIcon.FUNCTION">
+        gsw_pot_enthalpy_ice_freezing<!-- pot_enthalpy of seawater at the freezing point -->
       </tocitem>	  
-      <tocitem target="gsw_pot_enthalpy_freezing_poly.html" image="HelpIcon.FUNCTION">
-        gsw_pot_enthalpy_freezing_poly<!-- pot_enthalpy of seawater at the freezing point -->
+      <tocitem target="gsw_pot_enthalpy_ice_freezing_poly.html" image="HelpIcon.FUNCTION">
+        gsw_pot_enthalpy_ice_freezing_poly<!-- pot_enthalpy of seawater at the freezing point -->
       </tocitem>
       <tocitem target="gsw_SA_freezing_from_CT.html" image="HelpIcon.FUNCTION">
         gsw_SA_freezing_from_CT<!-- Absolute Salinity of seawater at the freezing point (for given CT) -->
@@ -428,7 +428,7 @@
         gsw_SA_freezing_from_t<!-- Absolute Salinity of seawater at the freezing point (for given t) -->
       </tocitem>
       <tocitem target="gsw_SA_freezing_from_t_poly.html" image="HelpIcon.FUNCTION">
-        gsw_brineSA_t_poly<!-- Absolute Salinity of seawater at the freezing point (for given t) -->
+        gsw_SA_freezing_from_t_poly<!-- Absolute Salinity of seawater at the freezing point (for given t) -->
       </tocitem>
 	  	  <tocitem target="gsw_pressure_freezing_CT.html" image="HelpIcon.FUNCTION">
         gsw_pressure_freezing_CT<!-- Conservative Temperature freezing temperature of seawater -->
@@ -445,11 +445,11 @@
 	  <tocitem target="gsw_t_freezing_first_derivatives_poly.html" image="HelpIcon.FUNCTION">
         gsw_t_freezing_first_derivatives_poly<!-- in-situ temperature freezing temperature of seawater -->
       </tocitem>
-	  <tocitem target="gsw_t_freezing_first_derivatives.html" image="HelpIcon.FUNCTION">
-        gsw_pot_enthalpy_freezing_first_derivatives<!-- pot_enthalpy of seawater at the freezing point -->
+	  <tocitem target="gsw_pot_enthalpy_ice_freezing_first_derivatives.html" image="HelpIcon.FUNCTION">
+        gsw_pot_enthalpy_ice_freezing_first_derivatives<!-- pot_enthalpy of seawater at the freezing point -->
       </tocitem>
-	  <tocitem target="gsw_t_freezing_first_derivatives_poly.html" image="HelpIcon.FUNCTION">
-        gsw_pot_enthalpy_freezing_first_derivatives_poly<!-- pot_enthalpy of seawater at the freezing point -->
+	  <tocitem target="gsw_pot_enthalpy_ice_freezing_first_derivatives_poly.html" image="HelpIcon.FUNCTION">
+        gsw_pot_enthalpy_ice_freezing_first_derivatives_poly<!-- pot_enthalpy of seawater at the freezing point -->
       </tocitem>
 	  <tocitem target="gsw_latentheat_melting.html" image="HelpIcon.FUNCTION">
         gsw_latentheat_melting<!-- latent heat of melting of ice into seawater (isobaric melting enthalpy) -->

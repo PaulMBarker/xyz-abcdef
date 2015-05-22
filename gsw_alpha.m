@@ -72,15 +72,15 @@ if (mt ~= ms | nt ~= ns)
     error('gsw_alpha: SA and CT must have same dimensions')
 end
 
-if (mp == 1) & (np == 1) 
-    p = p*ones(ms,ns);
-elseif (ns == np) & (mp == 1)  
-    p = p(ones(1,ms), :);     
-elseif (ms == mp) & (np == 1) 
-    p = p(:,ones(1,ns));  
-elseif (ns == mp) & (np == 1)
-    p = p.';     
-    p = p(ones(1,ms), :); 
+if (mp == 1) & (np == 1)              % p scalar - fill to size of SA
+    p = p*ones(size(SA));
+elseif (ns == np) & (mp == 1)         % p is row vector,
+    p = p(ones(1,ms), :);              % copy down each column.
+elseif (ms == mp) & (np == 1)         % p is column vector,
+    p = p(:,ones(1,ns));               % copy across each row.
+elseif (ns == mp) & (np == 1)          % p is a transposed row vector,
+    p = p.';                              % transposed then
+    p = p(ones(1,ms), :);                % copy down each column.
 elseif (ms == mp) & (ns == np)
     % ok
 else

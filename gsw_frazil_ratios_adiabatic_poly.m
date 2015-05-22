@@ -134,7 +134,7 @@ Gamma_Ih = gsw_adiabatic_lapse_rate_ice(tf,p);
 [CTf_SA, CTf_P] = gsw_CT_freezing_first_derivatives_poly(SA,p,saturation_fraction);
 
 wcp = cp_Ih.*w_Ih./(1 - w_Ih);
-part =(tf_P - Gamma_Ih)./CTf_P;
+part = (tf_P - Gamma_Ih)./CTf_P;
 
 bracket1 = h_hat_CT + wcp.*part;
 bracket2 = h - h_Ih - SA.*(h_hat_SA + wcp.*(tf_SA - part.*CTf_SA));

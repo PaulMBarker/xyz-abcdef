@@ -22,7 +22,7 @@ function [CTfreezing_SA, CTfreezing_P] = gsw_CT_freezing_first_derivatives_poly(
 %  saturation_fraction = the saturation fraction of dissolved air in 
 %                        seawater
 %  (i.e., saturation_fraction must be between 0 and 1, and the default 
-%    is 0, completely unsaturated) 
+%    is 0, air free) 
 %
 %  p & saturation_fraction (if provided) may have dimensions 1x1 or Mx1 or 
 %  1xN or MxN, where SA is MxN.
@@ -164,7 +164,7 @@ CTfreezing_SA = (c1 + x.*(1.5*c2  + x.*(2*c3  + x.*(2.5*c4  + x.*(3*c5  + 3.5*c6
 
 CTfreezing_P = (c7 + SA_r.*(c10   + x.*(c11   + x.*(c13 + x.*(c16 + x.*(c19 + c22*x))))) ...
      + p_r.*(2*c8 + SA_r.*(2*c12 + x.*(2*c14 + x.*(2*c17 + 2*c20*x))) ...
-     + p_r.*(3*c9 + SA_r.*(3*c15 + x.*(3*c18 + 3*c21*x))))).*1e-4;
+     + p_r.*(3*c9 + SA_r.*(3*c15 + x.*(3*c18 + 3*c21*x))))).*1e-8;
 
 % set any values that are out of range to be NaN. 
 CTfreezing_SA(p > 10000 | SA > 120 | ...

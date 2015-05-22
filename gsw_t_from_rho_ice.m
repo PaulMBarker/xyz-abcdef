@@ -7,8 +7,8 @@ function t_ice = gsw_t_from_rho_ice(rho_ice,p)
 %   t_ice = gsw_t_from_rho_ice(rho_ice,p)
 % 
 % DESCRIPTION:
-%  Calculates the in-situ temperature of ice, for given values
-%  of its density and sea pressure (in dbar). 
+%  Calculates the in-situ temperature of ice, for given values of its 
+%  density and sea pressure (in dbar). 
 %
 % INPUT:
 %  rho_ice =  density of ice                                     [ kg/m^3 ]
